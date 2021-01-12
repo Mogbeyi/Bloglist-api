@@ -1,3 +1,4 @@
+const bcrypt = require("bcrypt");
 const usersRouter = require("express").Router();
 const User = require("../models/user");
 
@@ -8,10 +9,20 @@ usersRouter.get("/", async (request, response) => {
 });
 
 usersRouter.post("/", async (request, response) => {
-  const user = new User(request.body);
-  const newUser = await user.save();
+  const body = request.body;
 
-  response.status(201).json(newUser);
+  const saltRounds = 10;
+  const passwordHash = await bcrypt.hash(body.password, saltRounds);
+
+  const user = new User({
+    username: body.username,
+    name: body.name,
+    passwordHash,
+  });
+
+  const savedUser = await user.save();
+
+  response.status(201).json(savedUser);
 });
 
 // blogsRouter.delete("/:id", async (request, response) => {
