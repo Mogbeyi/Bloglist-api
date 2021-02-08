@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const userSchema = new mongoose.Schema({
   username: String,
   name: String,
-  passwordhash: String,
+  passwordHash: String,
   blogs: [
     {
       type: mongoose.Schema.Types.ObjectId,
@@ -17,8 +17,8 @@ userSchema.set("tojson", {
     returnedobject.id = returnedobject._id.tostring();
     delete returnedobject._id;
     delete returnedobject.__v;
-    // the passwordhash should not be revealed
-    delete returnedobject.passwordhash;
+    // the passwordHash should not be revealed
+    delete returnedobject.passwordHash;
   },
 });
 
