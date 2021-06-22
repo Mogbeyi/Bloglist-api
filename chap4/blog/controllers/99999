@@ -50,3 +50,24 @@
 : 1624358951:0;clear
 : 1624358952:0;ls
 : 1624358953:0;cd ..
+: 1624375744:0;ls
+: 1624375746:0;vim blogs.js
+: 1624375988:0;ls
+: 1624375990:0;cd ..
+: 1624376030:0;ls
+: 1624376034:0;vim blogs.js
+: 1624376038:0;ls
+: 1624376054:0;curl
+: 1624376137:0;ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+: 1624376154:0;sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+: 1624376172:0;ls
+: 1624376185:0;sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+: 1624376209:0;brew install curl\
+
+: 1624376720:0;ls
+: 1624376722:0;curl
+: 1624376725:0;clear
+: 1624376782:0;curl -v
+: 1624376796:0;curl -V
+: 1624376829:0;ls
+: 1624376830:0;cd ..

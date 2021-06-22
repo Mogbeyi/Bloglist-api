@@ -8,6 +8,7 @@ const middleware = require("./utils/middleware");
 const logger = require("./utils/logger");
 const mongoose = require("mongoose");
 const loginRouter = require('./controllers/login')
+const cors = require('cors');
 
 logger.info("connecting to", config.MONGODB_URI);
 
@@ -25,6 +26,7 @@ mongoose
     logger.error("error connecting to MongoDB:", error.message);
   });
 
+app.use(cors());
 app.use(express.json());
 app.use(middleware.requestLogger);
 // app.use(middleware.tokenExtractor)
