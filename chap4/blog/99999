@@ -1,0 +1,26 @@
+: 1622120237:0;ls
+: 1622120242:0;cd controllers
+: 1622120263:0;ls
+: 1622120456:0;pip -v
+: 1622120459:0;clear
+: 1622120462:0;pip --version
+: 1622120516:0;pip3 install --upgrade --force pip
+: 1622120528:0;pip --version
+: 1622120540:0;pip3 --version
+: 1622120620:0;python3 -m pip --version
+: 1622120645:0;cd ~
+: 1622653373:0;ls
+: 1622653379:0;cd controllers
+: 1623413934:0;ls
+: 1623413943:0;cd controllers
+: 1623972651:0;ls
+: 1623972656:0;npm start
+: 1623972675:0;ls
+: 1623972680:0;cat index.js
+: 1623972687:0;cd models
+: 1623972701:0;ls
+: 1623972703:0;cd controllers
+: 1623972799:0;ls
+: 1623972803:0;cd tests
+: 1623972822:0;ls
+: 1623972827:0;cd ..

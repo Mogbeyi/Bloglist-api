@@ -8,8 +8,6 @@ loginRouter.post("/", async (request, response) => {
 
   const user = await User.findOne({ username: body.username });
 
-  console.log(user.passwordHash);
-
   const passwordCorrect =
     user === null
       ? false
